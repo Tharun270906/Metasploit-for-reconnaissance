@@ -24,30 +24,37 @@ Open terminal and try execute some kali linux commands
 Find out the ip address of the attackers system
 
 ## OUTPUT:
-![Screenshot 2025-05-10 102702](https://github.com/user-attachments/assets/3b23aaf5-5c7d-4454-befb-55432fba3e54)
+![image](https://github.com/user-attachments/assets/759b3b6b-8d85-4002-834c-92c7908f4e0a)
+
 
 POSTGRESQL msfdb :
-![Screenshot 2025-05-10 102728](https://github.com/user-attachments/assets/77c0ac4c-ca48-44b6-8770-67c87367a7a9)
+![image2](https://github.com/user-attachments/assets/14c243a5-97a8-4e97-9867-238afb3e5a90)
+
 
 ## OUTPUT:
-![Screenshot 2025-05-10 102750](https://github.com/user-attachments/assets/48ebd967-6c2e-4038-b8f5-6ce5b69d09d6)
+![image3](https://github.com/user-attachments/assets/82c42532-87d6-4d55-b85a-92b756d7c8c3)
+
 Invoke msfconsole:
 
 ## OUTPUT:
-![Screenshot 2025-05-10 102814](https://github.com/user-attachments/assets/8273e682-a91d-43bd-b613-ccdc26d7849a)
+![image4](https://github.com/user-attachments/assets/0266fc81-09a5-44eb-9c98-243293e88a4e)
+
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 
 ## OUTPUT:
-![Screenshot 2025-05-10 102842](https://github.com/user-attachments/assets/80fa2715-14ec-461c-9637-d060534203c0)
+![image5](https://github.com/user-attachments/assets/973f4ab6-ae5f-4cc4-8938-b5de070c932d)
+
 
 ## Port Scanning:
 Following command is executed for scanning the systems on our local area network with a TCP scan (-sT) looking for open ports between 1 and 1000 (-p1-1000). msf > nmap -sT 192.168.1810/24 -p1-100## 0
 ## OUTPUT:
-![Screenshot 2025-05-10 102907](https://github.com/user-attachments/assets/d72dd5d2-2e9f-4acb-ad25-e5da4cca8f44)
+![image6](https://github.com/user-attachments/assets/1596c02a-bfe0-4962-8a6d-ed6413997117)
+
 ## Step4:
 use the db-nmap command to scan and save the results into Metasploit's postgresql attached database. In that way, you can use those results in the exploitation stage later. scan the targets with the command db_nmap as follows. msf > db_nmap 192.168.181.0/24
 ## OUTPUT:
-![Screenshot 2025-05-10 102929](https://github.com/user-attachments/assets/050161e0-c297-4a97-b1c9-f2ec5e81f42f)
+![image7](https://github.com/user-attachments/assets/fb548cce-7dd9-47cc-9871-9e213a11d20c)
+
 Metasploit has a multitude of scanning modules built in. If we open another terminal, we can navigate to Metasploit's auxiliary modules and list all the scanner modules. cd /usr/share /metasploit-framework/modules/auxiliary kali > ls -l
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/99d557c1-7eb5-4c3b-81fb-ca8a1416bcbc)
